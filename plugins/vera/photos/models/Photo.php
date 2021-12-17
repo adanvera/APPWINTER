@@ -31,7 +31,6 @@ class Photo extends Model
         ]
     ];
 
-
     public $attachOne = [
         'poster' => 'System\Models\File'
     ];
