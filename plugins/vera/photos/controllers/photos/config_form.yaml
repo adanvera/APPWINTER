@@ -1,0 +1,10 @@
+name: Photos
+form: $/vera/photos/models/photo/fields.yaml
+modelClass: Vera\Photos\Models\Photo
+defaultRedirect: vera/photos/photos
+create:
+    redirect: 'vera/photos/photos/update/:id'
+    redirectClose: vera/photos/photos
+update:
+    redirect: vera/photos/photos
+    redirectClose: vera/photos/photos

@@ -1,0 +1,40 @@
+title = "Photosingle"
+url = "/photos/photo/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Vera\Photos\Models\Photo"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+<div class="container">
+    {% if record %}        
+        <h2>{{record.name}}</h2>
+        <img src="{{record.poster.thumb(200,auto)}}" alt="imagen">
+        <h4>Descripción:</h4>
+        <p>{{record.description|raw}}</p>
+        <p><small><p>Año: {{record.year}}</p></small></p>
+
+        <h3>Galeria de fotos</h3>
+        <ul class="gallery clearfix d-flex">
+            {% for image in record.photo_gallery%}
+                <a href="{{image.path}}">
+                    <li>
+                    <img src=" {{image.thumb(80,80,{'mode':'crop'})}}" alt="">
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
+        
+
+    {% else %}
+        {{ notFoundMessage }}
+    {% endif %}
+</div>

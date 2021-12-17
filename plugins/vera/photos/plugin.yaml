@@ -1,0 +1,11 @@
+plugin:
+    name: 'vera.photos::lang.plugin.name'
+    description: 'vera.photos::lang.plugin.description'
+    author: vera
+    icon: wn-icon-photo
+    replaces: {  }
+navigation:
+    main-menu-item:
+        label: Photos
+        url: vera/photos/photos
+        icon: icon-photo

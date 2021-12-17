@@ -1,0 +1,42 @@
+title = "Demonstration"
+url = "/"
+layout = "default"
+==
+<div class="jumbotron">
+    <div class="container">
+        {% content "welcome.htm" %}
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Galeria de fotos <small>todas las fotos dispoibles</small></h2>
+    </div>
+    <p>
+        This page demonstrates the basic CMS features.
+        Usually each page built with Winter is a combination of a layout, page, partials and content blocks,
+        although in simple cases you can just use a page without anything else.
+    </p>
+
+
+    <!-- Assets -->
+    <h3>Assets</h3>
+    <p class="lead">
+        <i class="icon-picture"></i> &nbsp; Assets are resource files like images and stylesheets.
+    </p>
+    <p>This theme stores its asset files (JavaScript, StyleSheet, images, fonts, etc) in the <code>themes/demo/assets</code> directory. This theme is also packaged with these useful 3rd party tools:</p>
+    <ul class="list-inline">
+        <li><a target="_blank" href="http://getbootstrap.com/">Twitter Bootstrap</a></li>
+        <li><a target="_blank" href="http://fontawesome.io/3.2.1/">Font Awesome</a></li>
+        <li><a target="_blank" href="http://www.google.com/fonts/specimen/Lato">Lato webfont</a></li>
+    </ul>
+    <p>You might prefer to remove them for your website implementation.</p>
+
+    <br />
+
+    <div class="text-center">
+        <p><a href="{{ 'ajax'|page }}" class="btn btn-lg btn-default">Continue to AJAX framework</a></p>
+    </div>
+
+</div>
