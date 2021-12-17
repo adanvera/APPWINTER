@@ -1,0 +1,10 @@
+name: Generos
+form: $/vera/photos/models/genero/fields.yaml
+modelClass: Vera\Photos\Models\Genero
+defaultRedirect: vera/photos/generos
+create:
+    redirect: 'vera/photos/generos/update/:id'
+    redirectClose: vera/photos/generos
+update:
+    redirect: vera/photos/generos
+    redirectClose: vera/photos/generos

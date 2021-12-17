@@ -22,6 +22,16 @@ class Photo extends Model
     ];
 
     /**relations */
+
+    public $belongsToMany = [
+        'generos' =>[
+            'vera\photos\models\genero',
+            'table' => 'vera_photos_photos_generos',
+            'order' => 'genero_titulo'
+        ]
+    ];
+
+
     public $attachOne = [
         'poster' => 'System\Models\File'
     ];
@@ -29,4 +39,5 @@ class Photo extends Model
     public $attachMany = [
         'photo_gallery' => 'System\Models\File'
     ];
+
 }

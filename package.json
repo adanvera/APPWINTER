@@ -34,9 +34,6 @@
     "mocha": "^6.2.0",
     "sinon": "^7.4.1"
   },
-  "dependencies": {
-    "bootstrap": "4.6"
-  },
   "version": "1.0.0",
   "main": "index.js",
   "author": ""

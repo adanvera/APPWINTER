@@ -6,3 +6,12 @@
 1.0.3:
     - 'Updated table vera_photos_'
     - builder_table_update_vera_photos_.php
+1.0.4:
+    - 'Created table vera_photos_generos'
+    - builder_table_create_vera_photos_generos.php
+1.0.5:
+    - 'Created table vera_photos_photos_generos'
+    - builder_table_create_vera_photos_photos_generos.php
+1.0.6:
+    - 'Updated table vera_photos_photos_generos'
+    - builder_table_update_vera_photos_photos_generos.php

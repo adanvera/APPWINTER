@@ -23,10 +23,10 @@ notFoundMessage = "Record not found"
         <p><small><p>Año: {{record.year}}</p></small></p>
 
         <h3>Galeria de fotos</h3>
-        <ul class="gallery clearfix d-flex">
+        <ul class="gallery clearfix d-flex" style="text-decoration: none;">
             {% for image in record.photo_gallery%}
                 <a href="{{image.path}}">
-                    <li>
+                    <li class="ml-5"style="text-decoration: none;" >
                     <img src=" {{image.thumb(80,80,{'mode':'crop'})}}" alt="">
                     </li>
                 </a>

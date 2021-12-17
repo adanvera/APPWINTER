@@ -9,3 +9,8 @@ navigation:
         label: Photos
         url: vera/photos/photos
         icon: icon-photo
+        sideMenu:
+            side-menu-item:
+                label: Generos
+                url: vera/photos/generos
+                icon: icon-tag

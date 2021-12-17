@@ -1,0 +1,4 @@
+title: Generos
+modelClass: Vera\Photos\Models\Genero
+toolbar:
+    buttons: reorder_toolbar

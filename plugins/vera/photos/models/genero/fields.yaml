@@ -1,0 +1,12 @@
+fields:
+    genero_titulo:
+        label: Genero
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: right
+        preset:
+            field: genero_titulo
+            type: slug
+        type: text
