@@ -47,3 +47,15 @@ fields:
         nameFrom: genero_titulo
         descriptionFrom: description
         type: relation
+    author:
+        label: Autores
+        prompt: 'Add new item'
+        style: default
+        span: auto
+        type: repeater
+        form:
+            fields:
+                autor_name:
+                    label: 'Autor:'
+                    span: full
+                    type: text

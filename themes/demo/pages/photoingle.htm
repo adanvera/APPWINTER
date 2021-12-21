@@ -32,6 +32,14 @@ notFoundMessage = "Record not found"
                 </a>
             {% endfor %}
         </ul>
+        <h3>Autores:</h3>
+
+        {% for autor in record.author%}
+            <li style="list-style: none;">
+                <a href="">{{autor.autor_name}}</a>
+            </li>
+        {% endfor %}
+        <br>
         <h3>Generos:</h3>
         {% for genero in record.generos %}
             <li>

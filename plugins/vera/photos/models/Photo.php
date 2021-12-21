@@ -23,6 +23,9 @@ class Photo extends Model
 
     /**relations */
 
+
+    protected $jsonable = ['author'];
+
     public $belongsToMany = [
         'generos' =>[
             'vera\photos\models\genero',
@@ -38,5 +41,4 @@ class Photo extends Model
     public $attachMany = [
         'photo_gallery' => 'System\Models\File'
     ];
-
 }
